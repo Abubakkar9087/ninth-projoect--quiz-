@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: flex;
+            /* justify-content: space-evenly; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-image: url(2.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container>a{
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(46 83 148); 
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 5px white;
+        }
+        header ul li{
+            list-style: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+        }
+        .programe{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            cursor: pointer;
+            transition: .5s ease-in;
+        }
+        .programe:hover { 
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* transform: scale(1.2); */
+            
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            text-shadow: 3px 3px 6px #000000;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Start Your Quiz</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <a href="html.html">
+        <div class="programe">
+            <h1>HTML</h1>
+        
+        </div></a>
+        <a href="css.html">
+        <div class="programe">
+            <h1>CSS</h1>
+        
+        </div></a>
+        <a href="js.html">
+        <div class="programe">
+            <h1>JS</h1>
+            
+        </div></a>
+    </div>
+</body>
+</html>
